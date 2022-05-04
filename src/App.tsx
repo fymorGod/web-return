@@ -1,20 +1,5 @@
+import { Widget } from "./components/Widget";
 
-interface ButtonProps {
-  text?: string;
+export function App () {
+  return <Widget/>
 }
-
-function Button(props: ButtonProps) {
-  return <button>{props.text ?? 'Default'}</button>
-}
-
-
-function App() {
-  return (
-    <>
-      <h1>hello world</h1>
-      <Button text="enviar"/>
-    </>
-  )
-}
-
-export default App
